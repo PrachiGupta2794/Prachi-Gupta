@@ -1,10 +1,12 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MatButtonModule,MatCheckboxModule } from '@angular/material'
 
 import { AppComponent } from './app.component';
 import { MyHome } from './components/home/home.component';
 import { MyContact } from './components/contact-me/contact-me.component';
-import {AboutMe} from './components/about-me/about-me.component';
+import { AboutMe} from './components/about-me/about-me.component';
 
 import { AppRoutingModule } from './app-routing.module';
 import { MyFooter } from './my-footer/my-footer.component';
@@ -24,7 +26,10 @@ import { DownloadResume } from './components/download-resume/download-resume.com
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    BrowserAnimationsModule,
+    MatCheckboxModule,
+    MatButtonModule
   ],
   providers: [],
   bootstrap: [AppComponent, MyFooter, MyHeader]

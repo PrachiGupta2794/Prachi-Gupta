@@ -5,6 +5,7 @@ import { Component } from '@angular/core';
   templateUrl: './home.component.html',
   styleUrls: ['./home.component.scss']
 })
-export class MyHome {
-  
+export class MyHome {  
+
+  //this.imageSrc= './assets'
 }
